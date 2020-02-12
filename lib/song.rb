@@ -53,7 +53,7 @@ class Song
     artist_name = mp3_format.split(" - ")[0]
     song = self.new
     song.artist_name = artist_name
-    artist_name
+    puts artist_name
   end
   
 
