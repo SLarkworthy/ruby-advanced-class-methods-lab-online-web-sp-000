@@ -48,7 +48,7 @@ class Song
   end
   
   def self.new_from_filename(mp3_format)
-    formatted_name = mp3_format.split(/[(\s\W\s).]/)[1]
+    formatted_name = mp3_format.split(" - ")[1].split(".")[0]
     puts formatted_name
     
   end
