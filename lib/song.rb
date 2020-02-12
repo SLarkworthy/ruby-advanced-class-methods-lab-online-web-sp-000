@@ -45,6 +45,11 @@ class Song
     @@all.sort_by{|instance| instance.name}
   end
   
+  def self.new_from_filename(mp3_format)
+    formatted_name = mp3_format.split(" - ")[1].split(".")[0]
+    puts formatted_name
+    
+  end
   
 
 end
